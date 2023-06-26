@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Page</title>
+</head>
+<body>
+    <!-- Use GET, intead of POST -->
+    <div>
+    <Form method="get">
+        <fieldset>
+            <legend>Registration Form</legend>
+        <p>
+            <label for="fname">First Name:</label>
+        <input type="text" name="fname" required>
+        </p>
+        <p>
+            <label for="lname">Last Name:</label>
+        <input type="text" name="lname" required>
+        </p>
+        <p><label for="email">Email:</label>
+            <input type="email" name="email" required>
+        </p>
+        <p><label for="pword">Password:</label>
+            <input type="password" name="pword" min="5" required>
+        </p>
+        <p> 
+            <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday">
+        </p>
+        <p>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="other">Other<br>
+        </p>
+        <p>
+            <label for="petsname">Pets:</label><br>
+        <input type="checkbox" name="petsname" value="cat">Cat<br>
+        <input type="checkbox" name="petsname" value="dog">Dog<br>
+        <input type="checkbox" name="petsname" value="monkey">Monkey<br>
+        </p>
+        <p>
+            <label for="cars">Choose a Car:</label><br>
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="audi">Audi</option>
+                <option value="benz">Benz</option>
+            </select>
+        </p>
+            <input type="submit" value="Register">
+            <input type="Reset" value="Undo All">
+        </fieldset>
+    </Form>
+</div>
+</body>
+</html>
